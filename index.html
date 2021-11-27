@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <script>
+        function Array() { 
+        var vArray= ["51", "13", "9" , "44"];
+        var vAusgabe="";
+        var vAnzahlElemente=vArray.length;
+        var i=0;
+
+		  //Hilfsvariable
+		    var vTemp;
+		  //Tausch
+		    vTemp = vArray[i]
+		    vArray[i] = vArray[i+1];
+		    vArray[i+1] = vTemp;
+            
+            vAusgabe = vAusgabe + "Anzahl Elemente im Array: " +vAnzahlElemente+ "<br />";
+	  
+	        while (i < vAnzahlElemente) {
+		    vAusgabe = vAusgabe + i + " -> " + vArray[i] + "<br />";
+		    i = i + 1;
+	  
+	  }
+    
+	  document.getElementById("idAusgabe").innerHTML = vAusgabe;
+    }
+    </script>
+  <div id="idAusgabe"></div>
+    <button onclick="Array();">Teste!</button>
+
+
+  </body>
+</html>
